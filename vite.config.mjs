@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   base: '/',
@@ -11,12 +12,12 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     sourcemap: false,
-    minify: true,
     rollupOptions: {
       output: {
         manualChunks: {
           vendor: ['react', 'react-dom', 'react-router-dom'],
-          coreui: ['@coreui/react', '@coreui/coreui', '@coreui/icons-react']
+          coreui: ['@coreui/react', '@coreui/coreui', '@coreui/icons-react'],
+          charts: ['chart.js', '@coreui/chartjs']
         }
       }
     }
