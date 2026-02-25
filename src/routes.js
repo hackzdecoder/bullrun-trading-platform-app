@@ -1,4 +1,5 @@
 import React from 'react'
+import OpenPosition from './views/positions/OpenPositions'
 
 // Dashboard
 const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'))
@@ -12,7 +13,7 @@ const PositionCalculator = React.lazy(() => import('./views/trading/PositionCalc
 // Positions
 const BuyPositions = React.lazy(() => import('./views/positions/BuyPositions'))
 const SellPositions = React.lazy(() => import('./views/positions/SellPositions'))
-const ClosePosition = React.lazy(() => import('./views/positions/ClosePosition'))
+const ClosePosition = React.lazy(() => import('./views/positions/ClosePositions'))
 
 // Market Data
 const LiveCharts = React.lazy(() => import('./views/trading/LiveCharts'))
@@ -52,7 +53,8 @@ const routes = [
   // Positions
   { path: '/positions/buy', name: 'Buy Positions', element: BuyPositions },
   { path: '/positions/sell', name: 'Sell Positions', element: SellPositions },
-  { path: '/positions/close', name: 'Close Position', element: ClosePosition },
+  { path: '/positions/close-position', name: 'Close Position', element: ClosePosition },
+  { path: '/positions/open-position', name: 'Open Position', element: OpenPosition },
 
   // Market Data
   { path: '/live-charts', name: 'Live Charts', element: LiveCharts },

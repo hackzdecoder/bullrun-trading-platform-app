@@ -78,8 +78,13 @@ const _nav = [
       },
       {
         component: CNavItem,
+        name: 'Open Position',
+        to: '/positions/open-position',
+      },
+      {
+        component: CNavItem,
         name: 'Close Position',
-        to: '/positions/close',
+        to: '/positions/close-position',
       }
     ]
   },

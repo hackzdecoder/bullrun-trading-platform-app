@@ -1,7 +1,7 @@
 import React from 'react';
 import { CCard, CCardHeader, CCardBody } from '@coreui/react';
 
-const OpenPositions = () => {
+const OpenPosition = () => {
     return (
         <CCard className="mb-4">
             <CCardHeader>
@@ -14,4 +14,4 @@ const OpenPositions = () => {
     );
 };
 
-export default OpenPositions;
+export default OpenPosition;
